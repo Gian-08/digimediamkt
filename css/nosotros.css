@@ -1,0 +1,448 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT";
+}
+body {
+  height: 100%;
+}
+.contenedor {
+  width: 100%;
+}
+/*Efectos de Navegacion*/
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  animation: deslizarNav;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes deslizarNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav-logo {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 110px;
+  height: 100px;
+}
+.nav-movil {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+}
+.nav-list {
+  flex-basis: 50%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-list li {
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  box-shadow: 10px 10px 5px -4px rgba(154, 154, 154, 1);
+  transition: background-color 1s;
+}
+.nav-list li:hover {
+  background-color: #e1edf7;
+}
+.nav-list li a {
+  color: #660066;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-social {
+  flex-basis: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-social i {
+  padding-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.nosotros {
+  background-color: #7fb2e5;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+/*Efectps de titulo de nosotros*/
+.nosotros span {
+  color: #ffff;
+  display: block;
+  font-size: 49px;
+  padding: 0px 10px;
+  font-weight: bold;
+  margin-left: 100px;
+  animation-name: deslizarNosotros;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deslizarNosotros {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.mision {
+  width: 100%;
+  padding: 50px 50px;
+  background: linear-gradient(
+      to right,
+      rgba(94, 35, 94, 0.5) 0%,
+      rgba(94, 35, 94, 0.5) 50%,
+      rgba(94, 35, 94, 0.5) 51%,
+      rgba(94, 35, 94, 0.4) 100%
+    ),
+    url("../img_digimediamkt/Mision.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  margin-bottom: 20px;
+  padding-left: 35%;
+}
+/*Efectos de mision*/
+.mision .mision-titulo h3 {
+  color: #e1edf7;
+  font-size: 100px;
+  text-align: center;
+  animation-name: revelarMision;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+ .mision-cuerpo p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: hsl(202, 91%, 18%);
+  font-size: 25px;
+  animation-name: revelarMision;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes revelarMision {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*fin de mision*/
+
+/*inicio de vision*/
+.vision {
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(94, 35, 94, 0.5) 0%,
+      rgba(94, 35, 94, 0.5) 50%,
+      rgba(94, 35, 94, 0.5) 51%,
+      rgba(94, 35, 94, 0.4) 100%
+    ),
+    url("../img_digimediamkt/vision.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0px;
+  padding-left: 10%;
+}
+
+.vision-titulo {
+  width: 100%;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.vision-cuerpo {
+  width: 100%;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.efectoVision{
+  animation-name: revelarVision;
+}
+.vision .vision-titulo h3 {
+  width: 40%;
+  color: #e1edf7;
+  font-size: 100px;
+  text-align: center;
+}
+.vision .vision-cuerpo p {
+  width: 40%;
+  color: #043957;
+  font-size: 26px;
+  text-align: center;
+}
+@keyframes revelarVision {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*fin de vision*/
+
+.valores {
+  width: 100%;
+}
+
+.valores-titulo {
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.valores-titulo h4 {
+  font-size: 70px;
+  color: #9e299e;
+  font-weight: bold;
+}
+
+.valores-figuras {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.valor {
+  width: 25%;
+}
+.valor:nth-child(1) {
+  background-color: #660066;
+}
+.valor:nth-child(2) {
+  background-color: #4d0d6e;
+}
+.valor:nth-child(3) {
+  background-color: #4521d1;
+}
+.valor:nth-child(4) {
+  background-color: #0066cc;
+}
+.valor .imagen {
+  text-align: center;
+  padding: 50px 0px 10px 0px;
+}
+.valor .imagen img {
+  width: 30%;
+}
+.valor .texto {
+  width: 100%;
+  text-align: center;
+}
+.valor .texto p {
+  width: 70%;
+  margin: auto;
+  padding: 10px 0px 60px 0px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*inicio footer*/
+.footer {
+  background-color: #e8e6e6;
+  width: 100%;
+  display: flex;
+  padding: 60px 0px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-list {
+  list-style: none;
+  width: 30%;
+}
+.footer-list li {
+  color: #685748;
+}
+.footer-social {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer-social i {
+  font-size: 28px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 40px 0px;
+    animation: none;
+  }
+  .nav-logo {
+    flex-basis: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .nav-movil {
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-movil i {
+    font-size: 60px;
+    padding: 20px;
+    z-index: 33;
+    position: fixed;
+    color: #660066;
+    top: 0px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    z-index: 32;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 2s;
+  }
+  .abrir {
+    transform: translateX(0%);
+  }
+  .nav-list li {
+    border-radius: 0px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: none;
+    transition: background-color 1s;
+  }
+  .nav-list li:hover {
+    background-color: #e1edf7;
+  }
+  .nav-list li a {
+    color: #660066;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-social {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+  }
+  .nav-social i {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .mision {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  .mision-titulo {
+    width: 100%;
+  }
+  .vision {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  .vision-titulo {
+    width: 100%;
+  }
+  .vision .vision-titulo h3 {
+    width: 100%;
+  }
+  .vision .vision-cuerpo p {
+    width: 50%;
+    margin: auto;
+  }
+  .valor {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .nosotros {
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros span {
+    font-size: 49px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .vision .vision-cuerpo p {
+    width: 80%;
+    margin: auto;
+  }
+  .valor {
+    width: 100%;
+  }
+  .footer-list {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .footer-list li {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-social {
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,731 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  height: 100%;
+}
+.contenedor {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  animation: deslizarNav;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes deslizarNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav-logo {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 110px;
+  height: 100px;
+}
+.nav-movil {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+}
+.nav-list {
+  flex-basis: 50%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-list li {
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  box-shadow: 10px 10px 5px -4px rgba(154, 154, 154, 1);
+  transition: background-color 1s;
+}
+.nav-list li:hover {
+  background-color: #e1edf7;
+}
+.nav-list li a {
+  color: #660066;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-social {
+  flex-basis: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-social i {
+  padding-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.servicios {
+  margin-top: 30px;
+  background-color: #7fb2e5;
+  overflow: hidden;
+}
+
+.servicios span {
+  color: white;
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 100px;
+  font-family: "Gill Sans", "Gill Sans MT";
+  animation-name: deslizarServicios;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deslizarServicios {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*Inicio de estrategoa Banner*/
+.estrategia {
+  width: 100%;
+  padding: 50px;
+  background: linear-gradient(
+      to right,
+      rgba(231, 222, 235, 0.7) 25%,
+      rgba(231, 222, 235, 0.8) 25%,
+      rgba(231, 222, 235, 0.8) 25%,
+      rgba(231, 222, 235, 0.7) 25%
+    ),
+    url("../img_digimediamkt/contenido-estrategico-pestaña-servicios.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.estrategia-principal {
+  width: 40%;
+  animation: deslizarEstrategia;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes deslizarEstrategia {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.estrategia-principal .estrategia-titulo h4 {
+  width: 100%;
+  color: #660066;
+  font-size: 49px;
+  font-family: "Gill Sans", "Gill Sans MT";
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+.estrategia-principal .estrategia-cuerpo {
+  padding: 40px 0px;
+}
+.estrategia-principal .estrategia-cuerpo p {
+  width: 90%;
+  color: #383838;
+  font-family: "Gill Sans", "Gill Sans MT";
+  font-size: 28px;
+}
+.estrategia-navegacion {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: deliszarNavegacion;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes deliszarNavegacion {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.estrategia-navegacion .opciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.estrategia-navegacion .opciones a {
+  background-color: #0066cc;
+  width: 70%;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.estrategia-navegacion .opciones a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(86,14,134,1) 18%,
+    rgba(58,46,146,1) 59%,
+    rgba(13,91,192,1) 85%, 
+    rgba(38,95,216,1) 96%
+  );
+}
+/*Fin de estrategia Banner */
+
+/*Inicio de marketing Banner */
+.marketing {
+  width: 100%;
+  padding: 50px;
+  background: linear-gradient(
+      to right,
+      rgba(190, 202, 214, 0.7) 0%,
+      rgba(190, 202, 214, 0.7) 50%,
+      rgba(190, 202, 214, 0.7) 51%,
+      rgba(190, 202, 214, 0.7) 100%
+    ),
+    url("../img_digimediamkt/Marketing-digital-pestaña-servicios.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.marketing-principal {
+  width: 40%;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes deslizarMarketing {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.efectoVisionPrinc {
+  animation-name: deslizarMarketing;
+}
+.marketing-principal .marketing-titulo h4 {
+  width: 100%;
+  color: #660066;
+  font-size: 49px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+.marketing-principal .marketing-cuerpo {
+  padding: 40px 0px;
+}
+.marketing-principal .marketing-cuerpo p {
+  width: 90%;
+  color: #383838;
+  font-size: 24px;
+}
+.marketing-navegacion {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes deslizarMarkNavegacion {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.efectoVisionNav {
+  animation-name: deslizarMarkNavegacion;
+}
+.marketing-navegacion .opciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.marketing-navegacion .opciones a {
+  background-color: #0066cc;
+  width: 65%;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.marketing-navegacion .opciones a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(86,14,134,1) 18%,
+    rgba(58,46,146,1) 59%,
+    rgba(13,91,192,1) 85%, 
+    rgba(38,95,216,1) 96%
+  );
+}
+
+/*Fin de marketing Banner */
+
+/*Inicio de diseño Banner */
+.diseño {
+  width: 100%;
+  padding: 100px;
+  background: linear-gradient(
+      to right,
+      rgba(231, 203, 250, 0.486) 0%,
+      rgba(231, 203, 250, 0.486) 50%,
+      rgba(231, 203, 250, 0.486) 51%,
+      rgba(231, 203, 250, 0.486) 100%
+    ),
+    url("../img_digimediamkt/desarrollo-web-pestaña-servicios.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diseño-principal {
+  width: 40%;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.efectoVisionPrinc {
+  animation-name: deslizarMarketing;
+}
+.diseño-principal .diseño-titulo h4 {
+  width: 100%;
+  color: #660066;
+  font-size: 49px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+.diseño-principal .diseño-cuerpo {
+  padding: 40px 0px;
+}
+.diseño-principal .diseño-cuerpo p {
+  width: 90%;
+  color: #383838;
+  font-size: 34px;
+}
+.diseño-navegacion {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.efectoVisionNav {
+  animation-name: deslizarMarkNavegacion;
+}
+.diseño-navegacion .opciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.diseño-navegacion .opciones a {
+  background-color: #0066cc;
+  width: 65%;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.diseño-navegacion .opciones a:hover {
+  background: linear-gradient(
+    90deg,
+  rgba(86,14,134,1) 18%,
+  rgba(58,46,146,1) 59%,
+  rgba(13,91,192,1) 85%, 
+  rgba(38,95,216,1) 96%
+  );
+}
+
+/* Fin de diseño */
+
+/* Inicio de audiovisual */
+
+.audiovisual {
+  width: 100%;
+  padding: 100px 0px 30px 0px;
+  background: linear-gradient(
+      to right,
+      rgb(206, 218, 228, 0.7) 0%,
+      rgb(206, 218, 228, 0.7) 50%,
+      rgb(206, 218, 228, 0.7) 51%,
+      rgb(206, 218, 228, 0.7) 100%
+    ),
+    url("../img_digimediamkt/piezas-graficas-y-contenido-audiovisual-pestaña-servicios.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.audiovisual-principal {
+  width: 40%;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.audiovisual-principal .audiovisual-titulo h4 {
+  width: 100%;
+  color: #660066;
+  font-size: 42px;
+  letter-spacing: -2px;
+  font-weight: normal;
+}
+.audiovisual-principal .audiovisual-cuerpo {
+  padding: 40px 0px;
+}
+.audiovisual-principal .audiovisual-cuerpo p {
+  width: 90%;
+  color: #383838;
+  font-size: 28px;
+}
+.audiovisual-navegacion {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.audiovisual-navegacion .opciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.audiovisual-navegacion .opciones a {
+  background-color: #0066cc;
+  width: 65%;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.audiovisual-navegacion .opciones a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(86,14,134,1) 18%,
+    rgba(58,46,146,1) 59%,
+    rgba(13,91,192,1) 85%, 
+    rgba(38,95,216,1) 96%
+  );
+}
+
+/* fin de .audiovisual */
+
+.footer {
+  background-color: #e8e6e6;
+  width: 100%;
+  display: flex;
+  padding: 60px 0px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-list {
+  list-style: none;
+  width: 30%;
+}
+.footer-list li {
+  color: #685748;
+}
+.footer-social {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer-social i {
+  font-size: 28px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 40px 0px;
+    animation: none;
+  }
+  .nav-logo {
+    flex-basis: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .nav-movil {
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-movil i {
+    font-size: 60px;
+    padding: 20px;
+    z-index: 33;
+    position: fixed;
+    color: #660066;
+    top: 0px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    z-index: 32;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 2s;
+  }
+  .abrir {
+    transform: translateX(0px);
+  }
+
+  .nav-list li {
+    border-radius: 0px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: none;
+    transition: background-color 1s;
+  }
+  .nav-list li:hover {
+    background-color: #e1edf7;
+  }
+  .nav-list li a {
+    color: #660066;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-social {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+  }
+  .nav-social i {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .servicios {
+    width: 100%;
+    text-align: center;
+  }
+  .servicios span {
+    margin-left: 0px;
+  }
+  .estrategia {
+    padding: 30px 0px;
+  }
+  .estrategia-principal {
+    width: 90%;
+  }
+  .estrategia-principal .estrategia-cuerpo {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .estrategia-principal .estrategia-titulo h4 {
+    text-align: center;
+  }
+  .estrategia-principal .estrategia-cuerpo p {
+    width: 100%;
+    margin: 0px;
+  }
+  .estrategia-navegacion {
+    width: 90%;
+  }
+  .estrategia-navegacion .opciones a {
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .marketing {
+    padding: 30px 0px;
+  }
+  .marketing-principal {
+    width: 90%;
+    order: 1;
+  }
+  .marketing-principal .marketing-cuerpo {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .marketing-principal .marketing-titulo h4 {
+    text-align: center;
+  }
+  .marketing-principal .marketing-cuerpo p {
+    width: 100%;
+    margin: 0px;
+  }
+  .marketing-navegacion {
+    width: 90%;
+    order: 2;
+  }
+  .marketing-navegacion .opciones a {
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .diseño {
+    padding: 30px 0px;
+  }
+  .diseño-principal {
+    width: 90%;
+    order: 1;
+  }
+  .diseño-principal .diseño-cuerpo {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .diseño-principal .diseño-titulo h4 {
+    text-align: center;
+  }
+  .diseño-principal .diseño-cuerpo p {
+    width: 100%;
+    margin: 0px;
+  }
+  .diseño-navegacion {
+    width: 90%;
+    order: 2;
+  }
+  .diseño-navegacion .opciones a {
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .audiovisual {
+    padding: 30px 0px;
+  }
+  .audiovisual-principal {
+    width: 90%;
+    order: 1;
+  }
+  .audiovisual-principal .audiovisual-cuerpo {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  .audiovisual-principal .audiovisual-titulo h4 {
+    text-align: center;
+  }
+  .audiovisual-principal .audiovisual-cuerpo p {
+    width: 100%;
+    margin: 0px;
+  }
+  .audiovisual-navegacion {
+    width: 90%;
+    order: 2;
+  }
+  .audiovisual-navegacion .opciones a {
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .footer-list {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-list li {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-social {
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

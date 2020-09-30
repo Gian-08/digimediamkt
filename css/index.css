@@ -1,0 +1,787 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT";
+}
+.contenedor {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  animation: deslizarNav;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes deslizarNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.nav-logo {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 110px;
+  height: 100px;
+}
+.nav-movil {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+}
+.nav-list {
+  flex-basis: 50%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-list li {
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-left: 10px;
+  box-shadow: 10px 10px 5px -4px rgba(154, 154, 154, 1);
+  transition: background-color 1s;
+}
+.nav-list li:hover {
+  background-color: #e1edf7;
+}
+.nav-list li a {
+  color: #660066;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-social {
+  flex-basis: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-social i {
+  padding-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.presentacion {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba(226, 226, 226, 0.7) 0%,
+      rgba(219, 219, 219, 1) 50%,
+      rgba(209, 209, 209, 1) 51%,
+      rgba(254, 254, 254, 0.7) 100%
+    ),
+    url("../img_digimediamkt/Logo-Digimedia-fondo.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+.imgSlide1 {
+  background: linear-gradient(
+      to right,
+      rgba(226, 226, 226, 0.7) 0%,
+      rgba(219, 219, 219, 1) 50%,
+      rgba(209, 209, 209, 1) 51%,
+      rgba(254, 254, 254, 0.7) 100%
+    ),
+    url("../img_digimediamkt/fondo1-inicio.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+/*Animacion de index*/
+.imgSlide2 {
+  background: linear-gradient(
+      to right,
+      rgba(226, 226, 226, 0.7) 0%,
+      rgba(219, 219, 219, 1) 50%,
+      rgba(209, 209, 209, 1) 51%,
+      rgba(254, 254, 254, 0.7) 100%
+    ),
+    url("../img_digimediamkt/fondo4-inicio.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+.imgSlide3 {
+  background: linear-gradient(
+      to right,
+      rgba(226, 226, 226, 0.7) 0%,
+      rgba(219, 219, 219, 1) 50%,
+      rgba(209, 209, 209, 1) 51%,
+      rgba(254, 254, 254, 0.7) 100%
+    ),
+    url("../img_digimediamkt/fondo3-inicio.webp");
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes opacityImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.presentacion img {
+  width: 70%;
+  animation-name: deslizarlogo;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+
+}
+
+@keyframes deslizalogo {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.descripcion {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(
+      to right,
+      rgba(114, 162, 205, 0.7) 50%,
+      rgba(114, 162, 205, 0.7) 20%,
+      rgba(114, 162, 205, 0.7) 30%
+    ),
+    url("../img/BackGroundQuienSomos.webp");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+}
+.descripcion-imagen {
+  width: 50%;
+  padding: 20px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.descripcion-imagen img {
+  /* 
+  animation-name: deslizarDerecha; */
+  opacity: 0;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes deslizarDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.descripcion-info {
+  width: 50%;
+  background-color: rgb(103, 23, 117);
+  padding: 0px 20px;
+  overflow: hidden;
+}
+.descripcion-info-head {
+  text-align: start;
+  padding: 60px 0px;
+  width: 100%;
+  color: white; /* 
+  animation-name: deslizarIzquierda; */
+  opacity: 0;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes deslizarIzquierda {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.descripcion-info-head h2 {
+  text-align: start;
+  width: 60%;
+  font-size: 60px;
+  color: white;
+}
+.descripcion-info-body {
+  width: 100%;
+  padding: 0px 0px 30px 0px; /* 
+  animation-name: deslizarIzquierda; */
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.descripcion-info-body p {
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  width: 60%;
+}
+.infografia {
+  background-color: #e8e6e6;
+  text-align: center;
+}
+.infografia img {
+  width: 70%;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  opacity: 0;
+}
+@keyframes showInfografia {
+  0% {
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  
+  }
+}
+.showInfo {
+  animation-name: showInfografia;
+}
+.servicios {
+  width: 100%;
+  background-color: #660066;
+}
+.servicios-head {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  
+}
+.servicios-head h3 {
+  font-size: 65px;
+  color: white;
+  animation: aparecerservicios;
+  animation-duration: 2s;
+}
+
+@keyframes aparecerservicios {
+  0% {
+  opacity: 0;
+  }
+
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  
+  }
+}
+
+.servicios-body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.servicio {
+  width: 18%;
+  margin: 10px;
+  border-radius: 40px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servicio a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.servicio:nth-child(1) {
+  background-image: linear-gradient(
+      to right,
+      rgba(72, 65, 63, 0.8) 50%,
+      rgba(72, 65, 63, 0.8) 20%,
+      rgba(72, 65, 63, 0.8) 30%
+    ),
+    url("../img_digimediamkt/contenido-estrategico-inicio.webp");
+  background-size: cover;
+}
+.servicio:nth-child(1):hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(219, 206, 202, 0.8) 50%,
+      rgba(219, 206, 202, 0.8) 20%,
+      rgba(219, 206, 202, 0.8) 30%
+    ),
+    url("../img_digimediamkt/contenido-estrategico-inicio.webp");
+  background-size: cover;
+}
+.servicio:nth-child(2) {
+  background-image: linear-gradient(
+      to right,
+      rgba(72, 65, 63, 0.8) 50%,
+      rgba(72, 65, 63, 0.8) 20%,
+      rgba(72, 65, 63, 0.8) 30%
+    ),
+    url("../img_digimediamkt/marketing-digital-inicio.webp");
+  background-size: cover;
+}
+.servicio:nth-child(2):hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(219, 206, 202, 0.8) 50%,
+      rgba(219, 206, 202, 0.8) 20%,
+      rgba(219, 206, 202, 0.8) 30%
+    ),
+    url("../img_digimediamkt/marketing-digital-inicio.webp");
+}
+.servicio:nth-child(3) {
+  background-image: linear-gradient(
+      to right,
+      rgba(72, 65, 63, 0.8) 50%,
+      rgba(72, 65, 63, 0.8) 20%,
+      rgba(72, 65, 63, 0.8) 30%
+    ),
+    url("../img_digimediamkt/desarrollo-web-inicio.webp");
+  background-size: cover;
+}
+.servicio:nth-child(3):hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(219, 206, 202, 0.8) 50%,
+      rgba(219, 206, 202, 0.8) 20%,
+      rgba(219, 206, 202, 0.8) 30%
+    ),
+    url("../img_digimediamkt/desarrollo-web-inicio.webp");
+}
+.servicio:nth-child(4) {
+  background-image: linear-gradient(
+      to right,
+      rgba(72, 65, 63, 0.8) 50%,
+      rgba(72, 65, 63, 0.8) 20%,
+      rgba(72, 65, 63, 0.8) 30%
+    ),
+    url("../img_digimediamkt/piezas-graficas-y-cont-audiovisual-inicio.webp");
+  background-size: cover;
+}
+.servicio:nth-child(4):hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(219, 206, 202, 0.8) 50%,
+      rgba(219, 206, 202, 0.8) 20%,
+      rgba(219, 206, 202, 0.8) 30%
+    ),
+    url("../img_digimediamkt/piezas-graficas-y-cont-audiovisual-inicio.webp");
+}
+.servicio h5 {
+  width: 100%;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+.servicio:hover h5 {
+  color: #0871ac;
+}
+
+    /*inicio slide*/
+
+
+    .aliados-head {
+      width: 100%;
+      background-color: #3D9BE9;
+      overflow: hidden;
+    }
+    .aliados-head h5 {
+      width: 50%;
+      margin: auto;
+      padding:20px 0px;
+      font-size: 65px;
+      color: #ffffff;
+      text-align: center;
+      animation: deslizarderecha;
+      animation-duration: 3s;
+      font-weight: bold;
+    }
+
+    @keyframes deslizarderecha {
+      0% {
+      opacity: 0;
+      transform: translateX(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      
+      }
+    }
+    
+    .principal-slider {
+     
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .slider-contenido {
+      background-color: #000000;
+      opacity: 0.6;
+      display: inline-flex;
+      -moz-animation: slider 5s infinite linear;
+      -webkit-animation: slider 5s infinite linear;
+      animation: slider 5s infinite linear;
+      width: auto;
+      padding: 5px 2px;
+    }
+
+    @keyframes slider {
+      to {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+    
+
+    .slider-contenido:hover{
+      background-color: #000000;
+      opacity: 0.6;
+      display: inline-flex;
+      animation-play-state: paused;
+      width: auto;
+      padding: 5px 2px;
+    }
+
+    @keyframes slidermouse {
+      to {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+      }
+    }
+
+    .imagenes-slider {
+     
+      flex: 0 0 auto;
+      text-align: center;
+      width: 6%;
+    }
+    
+    
+   
+    
+    
+    /*fin slide*/
+
+
+.aliados-body {
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.aliado {
+  width: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aliado img {
+  border-radius: 50%;
+  width: 100%;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.efectoAliadosImg {
+  animation: deslizarDerecha;
+}
+.aliado span {
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  padding: 30px 0px;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.efectoAliadosSpan {
+  animation-name: deslizarIzquierda;
+}
+.extras {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.extras span {
+  width: 70%;
+  font-weight: 800;
+  text-align: center;
+  font-size: 110px;
+  color: #660066;
+  animation-duration: 1s;
+  text-align: center;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes traslate3d {
+  0% {
+    transform: scale(0.08) rotate(-10deg) translateX(-90%); /* 
+    transform: translate3d(0px, 0px, 0px); */
+    letter-spacing: -70px;
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateX(0%);
+    letter-spacing: 0px; /* 
+    transform: translate3d(0px, 50px, 200px); */
+    opacity: 1;
+  }
+}
+.traslate3d {
+  animation-name: traslate3d;
+}
+.extras-url {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+.extras-url a {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 26px;
+  color: white;
+  background-color: #0066cc;
+  text-decoration: none;
+  
+  animation-duration: 2s;
+  text-align: center;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.extras-url a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(86, 14, 134, 1) 18%,
+    rgba(58, 46, 146, 1) 59%,
+    rgba(13, 91, 192, 1) 85%,
+    rgba(38, 95, 216, 1) 96%
+  );
+}
+.footer {
+  background-color: #e8e6e6;
+  width: 100%;
+  display: flex;
+  padding: 60px 0px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer-list {
+  list-style: none;
+  width: 30%;
+}
+.footer-list li {
+  color: #685748;
+}
+.footer-social {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.footer-social i {
+  font-size: 28px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 40px 0px;
+    animation: none;
+  }
+  .nav-logo {
+    flex-basis: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .nav-movil {
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-movil i {
+    font-size: 60px;
+    padding: 20px;
+    z-index: 33;
+    position: fixed;
+    color: #660066;
+    top: 0px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    z-index: 32;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 2s;
+  }
+  .abrir {
+    transform: translateX(0%);
+  }
+  .nav-list li {
+    border-radius: 0px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: none;
+    transition: background-color 1s;
+  }
+  .nav-list li:hover {
+    background-color: #e1edf7;
+  }
+  .nav-list li a {
+    color: #660066;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-social {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+  }
+  .nav-social i {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .servicios-head h3 {
+    font-size: 45px;
+  }
+  .descripcion-imagen {
+    width: 100%;
+  }
+  .descripcion-info {
+    width: 100%;
+  }
+  .descripcion-imagen img {
+    animation: none;
+    opacity: 1;
+  }
+  .descripcion-info-head {
+    animation: none;
+    opacity: 1;
+  }
+  .descripcion-info-body {
+    animation: none;
+    opacity: 1;
+  }
+  .descripcion-info-head h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .descripcion-info-body p {
+    width: 100%;
+    text-align: center;
+  }
+  .servicio {
+    width: 80%;
+  }
+  .aliados-head h5 {
+    width: 90%;
+    font-size:32px;
+    padding:20px 0px;
+  }
+  .aliado {
+    width: 100%;
+    background-color: white;
+  }
+  .aliado img {
+    width: 60%;
+  }
+  .extras span {
+    width: 100%;
+    font-size: 42px;
+  }
+  .extras-url {
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+  }
+  .footer-list {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-list li {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-social {
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
