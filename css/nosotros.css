@@ -97,9 +97,9 @@ body {
   font-size: 49px;
   padding: 0px 10px;
   font-weight: bold;
-  margin-left: 100px;
+  margin-left: 25%;
   animation-name: deslizarNosotros;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -116,24 +116,12 @@ body {
 }
 
 .mision {
-  width: 100%;
-  padding: 50px 50px;
-  background: linear-gradient(
-      to right,
-      rgba(94, 35, 94, 0.5) 0%,
-      rgba(94, 35, 94, 0.5) 50%,
-      rgba(94, 35, 94, 0.5) 51%,
-      rgba(94, 35, 94, 0.4) 100%
-    ),
-    url("../img_digimediamkt/Mision.webp");
-  background-repeat: repeat, no-repeat;
-  background-size: cover, cover;
-  background-attachment: fixed, fixed;
-  margin-bottom: 20px;
-  padding-left: 35%;
+  width: 50%;
+  margin: 0 auto;
+  
 }
 /*Efectos de mision*/
-.mision .mision-titulo h3 {
+/* .mision .mision-titulo h3 {
   color: #e1edf7;
   font-size: 100px;
   text-align: center;
@@ -141,15 +129,15 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-}
+} */
  .mision-cuerpo p {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  color: hsl(202, 91%, 18%);
+  font-weight:bold;
+  line-height:  1.8;;
+  text-align: justify;
+  color:#4d0d6e;
   font-size: 25px;
   animation-name: revelarMision;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
@@ -166,25 +154,71 @@ body {
 
 /*fin de mision*/
 
+/*inicio de estrategia*/
+
+#wrapper{
+  max-width: 700px;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.box img {
+  width: 186px;
+  height: 400px;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#one {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 500px;
+  float: left;
+  background: #7fb2e5;
+}
+#one h3, li {
+  color: #ffffff;
+
+}
+#one h3 {
+  font-weight:bold;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.box-lista{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.box-title h3 {
+  font-weight:bold;
+  font-size: 25px;
+  line-height: 1.8;
+}
+.box-lista li {
+  font-weight:bold;
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+
+#two {
+  float: left;
+}
+/*fin de estrategia*/
 /*inicio de vision*/
 .vision {
-  width: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(94, 35, 94, 0.5) 0%,
-      rgba(94, 35, 94, 0.5) 50%,
-      rgba(94, 35, 94, 0.5) 51%,
-      rgba(94, 35, 94, 0.4) 100%
-    ),
-    url("../img_digimediamkt/vision.webp");
-  background-repeat: repeat, no-repeat;
-  background-size: cover, cover;
-  background-attachment: fixed, fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 60px 0px;
-  padding-left: 10%;
+  width: 46%;
+  margin: 0 auto;
 }
 
 .vision-titulo {
@@ -204,17 +238,22 @@ body {
 .efectoVision{
   animation-name: revelarVision;
 }
-.vision .vision-titulo h3 {
-  width: 40%;
-  color: #e1edf7;
-  font-size: 100px;
-  text-align: center;
+
+.img-contenido{
+  width: 50%;
+  margin: 0 auto;
+}
+.img-contenido img {
+  width: 100%;
+  
 }
 .vision .vision-cuerpo p {
-  width: 40%;
-  color: #043957;
-  font-size: 26px;
-  text-align: center;
+  width: 100%;
+  line-height: 1.8;
+  text-align: justify;
+  color: #4d0d6e;
+  font-weight:bold;
+  font-size: 25px;
 }
 @keyframes revelarVision {
   0% {
@@ -229,7 +268,7 @@ body {
 
 /*fin de vision*/
 
-.valores {
+/* .valores {
   width: 100%;
 }
 
@@ -283,7 +322,7 @@ body {
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
-}
+} */
 
 /*inicio footer*/
 .footer {
@@ -310,6 +349,26 @@ body {
 .footer-social i {
   font-size: 28px;
   margin: 10px;
+}
+@media (max-width: 1300px){
+  .mision{
+    width: 80%;
+  }
+  .vision {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .mision{
+    width: 80%;
+  }
+  .vision {
+    width: 80%;
+  }
+  .img-contenido  {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
