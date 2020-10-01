@@ -1,0 +1,114 @@
+    /*----------FOOTER---------*/
+    
+    footer {
+        width: 100%;
+        min-height: 180px;
+        background: var(--gris-claro);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__descripcion,
+    .footer__contacto,
+    .footer__sociales {
+        width: calc(100% / 3);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    
+    .footer__descripcion h4,
+    .footer__contacto h4 {
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+    
+    .footer__contacto h4 {
+        margin-left: 1rem;
+    }
+    
+    .footer__descripcion p {
+        font-size: .9rem;
+    }
+    
+    .footer__contacto p {
+        font-size: .9rem;
+    }
+    
+    .footer__sociales {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer__sociales a {
+        font-size: 30px;
+        margin: 0 10px;
+        color: var(--negro);
+        width: 30px;
+        height: 30px;
+        transition: .3s ease;
+    }
+    
+    .footer__sociales a:nth-child(1):hover {
+        color: var(--azul-claro);
+    }
+    
+    .footer__sociales a:nth-child(2):hover {
+        color: var(--instagram);
+    }
+    
+    .footer__sociales a:nth-child(3):hover {
+        color: var(--twitter);
+    }
+    
+    .footer__sociales a:nth-child(4):hover {
+        color: var(--linkedin);
+    }
+    /*----------RESPONSIVE---------*/
+    
+    @media (max-width: 1500px) {
+        html {
+            font-size: 12px;
+        }
+        @media (max-width: 1000px) {
+            html {
+                font-size: 10px;
+            }
+            .footer {
+                flex-wrap: wrap;
+            }
+            .footer__descripcion,
+            .footer__contacto {
+                width: 50%;
+                margin: 10px 0;
+            }
+            .footer__sociales {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 480px) {
+            html {
+                font-size: 9px;
+            }
+            .footer__descripcion,
+            .footer__contacto,
+            .footer__sociales {
+                width: 100%;
+            }
+        }
+    }
