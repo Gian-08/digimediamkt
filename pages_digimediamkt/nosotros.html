@@ -44,72 +44,50 @@
           <span>Nosotros</span>
         </div>
         <div class="mision">
-          <div class="mision-titulo">
-            <h3>Misión</h3>
-          </div>
           <div class="mision-cuerpo">
             <p>
-              Ser aliado de los emprendimientos en su
-              posicionamiento digital; mediante la generación de contenido
-              estratégico que garantice el cumplimiento de los 
-              objetivos planteados.
+              Somos un equipo de trabajo conformado por marketeros, comunicadores y diseñadores
+              graficos que realizar estrategias innovadoras, creativas y eficientes de marketing digital
+              para que tu negocio aumente sus ventas. Nuestros planes de marketing se caracterizan
+              no solo por diseñar publicidad atractiva, sino que empleamos herramientas digitales que 
+              garanticen el crecimiento sostenido de tu PYME o emprendimiento; por ello, nos 
+              enfocamos en generar contenido que ayude a captar más clientes para tu empresa.
             </p>
+          </div>
+        </div>
+        <div class="img-nosotros">
+          <div class="img-contenido">
+            <img src="../img_digimediamkt/marketing_digital_pymes.webp" alt="" >
+          </div>
+        </div>
+        <div id="wrapper">
+          <div id="one" class="box">
+              <div class="box-title">
+                <h3>UNA ESTRATEGIA DE MARKETING DIGITAL PERMITE:</h3>
+              </div>
+              <div class="box-lista">
+                <li>Hacer mas conocida tu empresa</li>
+                <li>Más oportunidad de negocio</li>
+                <li>Incrementar ventas</li>
+                <li>Generar más dinero</li>
+              </div>
+          </div>
+          <div id="two" class="box">
+            <img src="../img_digimediamkt/ventas_y_emprendimiento.webp" alt="" >
           </div>
         </div>
         <div class="vision">
           <div class="vision-titulo">
-            <h3>Visión</h3>
+            
           </div>
 
           <div class="vision-cuerpo">
             <p>
-              Liderar la transformación digital de las PYME en el Perú;
-              estableciendo vínculos sólidos entre nuestros clientes y sus
-              respectivas audiencias.
+              En DIGIMEDIA tenemos como objetivo liderar la transformación digital de las PYME en el Perú a través de estrategias de marketing digital que ayuden al crecimiento comercial de los emprendimientos en nuestro país.
             </p>
           </div>
         </div>
-        <div class="valores">
-          <div class="valores-titulo">
-            <h4>Valores</h4>
-          </div>
-          <div class="valores-figuras">
-            <div class="valor">
-              <div class="imagen">
-                <img src="../img_digimediamkt/Cara.webp" />
-              </div>
-              <div class="texto">
-                <p>COMPROMISO</p>
-              </div>
-            </div>
-            <div class="valor">
-              <div class="imagen">
-                <img src="../img_digimediamkt/Foco.webp" />
-              </div>
-              <div class="texto">
-                <p>INNOVACION</p>
-              </div>
-            </div>
-            <div class="valor">
-              <div class="imagen">
-                <img src="../img_digimediamkt/tuerca.webp" />
-              </div>
-              <div class="texto">
-                <p>ADAPTABILIDAD</p>
-              </div>
-            </div>
-            <div class="valor">
-              <div class="imagen">
-                <img src="../img_digimediamkt/chat.webp" />
-              </div>
-              <div class="texto">
-                <p>
-                  TRABAJO EN EQUIPO
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </main>
 
       <footer class="footer">
@@ -132,12 +110,14 @@
     //Efectos de transicion segun ventana
     const visionTitulo = document.querySelector(".vision-titulo");
     const visionCuerpo = document.querySelector(".vision-cuerpo");
+
     window.addEventListener("scroll" , ()=>{
         if ( window.scrollY > 100){
             visionTitulo.classList.add("efectoVision");
             visionCuerpo.classList.add("efectoVision");
+            visionImg.classList.add("efectoImg");
         }
-    })
+    });
     </script>
   </body>
 </html>
