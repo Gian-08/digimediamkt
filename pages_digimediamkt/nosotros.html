@@ -55,11 +55,11 @@
             </p>
           </div>
         </div>
-        <div class="img-nosotros">
-          <div class="img-contenido">
-            <img src="../img_digimediamkt/marketing_digital_pymes.webp" alt="" >
-          </div>
+        
+        <div class="presentacion">
+          <img src="../img_digimediamkt/marketing_digital_pymes.webp" />
         </div>
+        
         <div id="wrapper">
           <div id="one" class="box">
               <div class="box-title">
@@ -115,9 +115,27 @@
         if ( window.scrollY > 100){
             visionTitulo.classList.add("efectoVision");
             visionCuerpo.classList.add("efectoVision");
-            visionImg.classList.add("efectoImg");
         }
     });
+     //Js para index
+     const imgSlide = document.querySelector(".presentacion");
+      const img = () => {
+        setTimeout(() => {
+          imgSlide.classList.remove("imgSlide3");
+          imgSlide.classList.add("imgSlide1");
+        }, 2000);
+        setTimeout(() => {
+          imgSlide.classList.remove("imgSlide1");
+          imgSlide.classList.add("imgSlide2");
+        }, 4000);
+        setTimeout(() => {
+          imgSlide.classList.remove("imgSlide2");
+          imgSlide.classList.add("imgSlide3");
+        }, 6000);
+      };
+      setInterval(() => {
+        img();
+      }, 6000);
     </script>
   </body>
 </html>

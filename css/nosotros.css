@@ -243,9 +243,44 @@ body {
   width: 50%;
   margin: 0 auto;
 }
-.img-contenido img {
+.presentacion {
   width: 100%;
-  
+  text-align: center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  background-attachment: fixed, fixed;
+  animation-name: opacityImage;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+@keyframes opacityImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.presentacion img {
+  width: 70%;
+  animation-name: deslizarlogo;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+
+}
+
+@keyframes deslizalogo {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .vision .vision-cuerpo p {
   width: 100%;
