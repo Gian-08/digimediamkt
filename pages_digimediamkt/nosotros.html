@@ -4,47 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles Box Icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"  />
     <link rel="stylesheet" href="../css/nosotros.css" type="text/css" />
+    <link rel="stylesheet" href="../css/partials/footer.css">
+    <link rel="stylesheet" href="../css/partials/navbar.css">
     <script src="../js/index.js" text="text/javascript"></script>
 
     <title>Nosotros</title>
   </head>
   <body>
     <div class="contenedor">
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="../index.html">
-            <img src="../img_digimediamkt/Logo-circular.webp" />
-          </a>
-        </div>
-        <ul class="nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contacto.html">Contáctanos</a></li>
+      <nav>
+        <a href="#" class="logo">
+            <img src="../img_digimediamkt/Logo-circular.webp" alt="Digital Media">
+        </a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a class="active" href="../pages_digimediamkt/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages_digimediamkt/servicios.html">Servicios</a></li>
+            <li><a href="../pages_digimediamkt/blog.html">Blog</a></li>
+            <li><a href="../pages_digimediamkt/contacto.html">Contáctanos</a></li>
         </ul>
-        <div class="nav-movil">
-          <i class="bx bx-list-ul"></i>
-        </div>
-        <div class="nav-social">
-          <a target="_blank" href="https://www.facebook.com/DigiMedia.Marketing1"><i class="bx bxl-facebook"></i></a>
-          <a target="_blank" href="https://www.instagram.com/digi.media.mkt/"><i class="bx bxl-instagram"></i></a>
-          <a target="_blank" href="https://twitter.com/DigimediaM"> <i class="bx bxl-twitter"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/digimedia-marketing/"> <i class="bx bxl-linkedin-square"></i></a>
-        </div>
-      </nav>
+    </nav>
+    <div class="espacio" style="height: 40px;"></div>
 
       <main class="main">
         <div class="nosotros">
           <span>Nosotros</span>
         </div>
-        <div class="mision">
-          <div class="mision-cuerpo">
+        <div class="descripcion">
+          <div class="descripcion-cuerpo">
             <p>
               Somos un equipo de trabajo conformado por marketeros, comunicadores y diseñadores
               graficos que realizar estrategias innovadoras, creativas y eficientes de marketing digital
@@ -56,69 +47,83 @@
           </div>
         </div>
         
-        <div class="presentacion">
+        <div class="grafico">
           <img src="../img_digimediamkt/marketing_digital_pymes.webp" />
         </div>
-        
-        <div id="wrapper">
-          <div id="one" class="box">
-              <div class="box-title">
+
+        <div class="estrategia">
+          <div id="one" class="estrategia-cuerpo">
+              <div class="estrategia-titulo">
                 <h3>UNA ESTRATEGIA DE MARKETING DIGITAL PERMITE:</h3>
               </div>
-              <div class="box-lista">
+              <div class="estrategia-lista">
                 <li>Hacer mas conocida tu empresa</li>
                 <li>Más oportunidad de negocio</li>
                 <li>Incrementar ventas</li>
                 <li>Generar más dinero</li>
               </div>
           </div>
-          <div id="two" class="box">
+          <div id="two" class="estrategia-cuerpo">
             <img src="../img_digimediamkt/ventas_y_emprendimiento.webp" alt="" >
           </div>
         </div>
-        <div class="vision">
-          <div class="vision-titulo">
-            
-          </div>
-
-          <div class="vision-cuerpo">
+        
+        <div class="objetivo">
+          <div class="objetivo-cuerpo">
             <p>
-              En DIGIMEDIA tenemos como objetivo liderar la transformación digital de las PYME en el Perú a través de estrategias de marketing digital que ayuden al crecimiento comercial de los emprendimientos en nuestro país.
+              En DIGIMEDIA tenemos como objetivo liderar la transformación digital 
+              de las PYME en el Perú a través de estrategias de marketing digital 
+              que ayuden al crecimiento comercial de los emprendimientos en nuestro país.
             </p>
           </div>
         </div>
         
       </main>
-
-      <footer class="footer">
-        <ul class="footer-list">
-        
-          <li>Digimediamarketing SAC</li>
-          <li>Dirección: Calle Las Fresias Mz E Lote 26 - Ate Vitarte</li>
-          <li>Teléfono: 936910425 </li>
-          <li>Correo: ventas@digimediamkt.com</li>
-        </ul>
-        <div class="footer-social">
-          <a target="_blank" href="https://www.facebook.com/DigiMedia.Marketing1"><i class="bx bxl-facebook"></i></a>
-          <a target="_blank" href="https://www.instagram.com/digi.media.mkt/"><i class="bx bxl-instagram"></i></a>
-          <a target="_blank" href="https://twitter.com/DigimediaM"> <i class="bx bxl-twitter"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/digimedia-marketing/"> <i class="bx bxl-linkedin-square"></i></a>
-        </div>
-      </footer>
     </div>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer">
+          <div class="footer__descripcion">
+              <h4>DigiMedia – Laboratorio Emprendedor</h4>
+              <p>Somos una agencia de marketing digital especialista en el crecimiento comercial de las PYMES y emprendimientos</p>
+          </div>
+          <div class="footer__contacto">
+              <h4> Digimediamarketing SAC</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Calle Las Fresias Mz E Lote 26 - Ate Vitarte</p>
+              <p><i class="fas fa-phone-alt"></i> 936910425</p>
+              <p><i class="far fa-envelope"></i> ventas@digimediamkt.com</p>
+          </div>
+          <div class="footer__sociales">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+  </footer>
+
+  <!--BOTON FLOTANTE-->
+  <a href="#" target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+  <script src="https://kit.fontawesome.com/022b0abea9.js" crossorigin="anonymous"></script>
     <script>
     //Efectos de transicion segun ventana
-    const visionTitulo = document.querySelector(".vision-titulo");
-    const visionCuerpo = document.querySelector(".vision-cuerpo");
-
+    
+    const estrategiaCuerpo = document.querySelector("#one");
+    const estrategiaImg = document.querySelector("#two");
+    const estrategiaTitulo = document.querySelector(".estrategia-titulo");
+    const estrategiaLista = document.querySelector(".estrategia-lista");
     window.addEventListener("scroll" , ()=>{
         if ( window.scrollY > 100){
-            visionTitulo.classList.add("efectoVision");
-            visionCuerpo.classList.add("efectoVision");
+            estrategiaTitulo.classList.add("efectoTitulo");
+            estrategiaCuerpo.classList.add("efectoEstrategia");
+            estrategiaLista.classList.add("efectoLista");
+            estrategiaImg.classList.add("efectoImagen");
         }
     });
      //Js para index
-     const imgSlide = document.querySelector(".presentacion");
+     const imgSlide = document.querySelector(".grafico");
       const img = () => {
         setTimeout(() => {
           imgSlide.classList.remove("imgSlide3");

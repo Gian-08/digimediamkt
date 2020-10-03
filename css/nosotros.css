@@ -1,10 +1,24 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT";
+  
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --gris-claro: #ecebebbd;
+  --gris-oscuro: #d3d2d2bd;
+  --morado-claro: #660066;
+  --morado: #4D0D6E;
+  --azul: #4521D1;
+  --azul-claro: #0066CC;
+  --instagram: #8a3ab9;
+  --twitter: #00acee;
+  --linkedin: #0072b1;
+  --altura: calc(100vh - 80px);
 }
 body {
   height: 100%;
@@ -12,74 +26,6 @@ body {
 .contenedor {
   width: 100%;
 }
-/*Efectos de Navegacion*/
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  animation: deslizarNav;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  
-}
-@keyframes deslizarNav {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-.nav-logo {
-  flex-basis: 30%;
-  text-align: center;
-}
-
-.nav-logo img {
-  width: 110px;
-  height: 100px;
-}
-.nav-movil {
-  width: 100%;
-  display: none;
-  flex-wrap: wrap;
-}
-.nav-list {
-  flex-basis: 50%;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.nav-list li {
-  border-radius: 20px;
-  padding: 10px 10px;
-  margin-left: 10px;
-  box-shadow: 10px 10px 5px -4px rgba(154, 154, 154, 1);
-  transition: background-color 1s;
-}
-.nav-list li:hover {
-  background-color: #e1edf7;
-}
-.nav-list li a {
-  color: #660066;
-  text-decoration: none;
-  font-size: 20px;
-}
-.nav-social {
-  flex-basis: 20%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.nav-social i {
-  padding-left: 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
 .main {
   width: 100%;
   padding-top: 40px;
@@ -90,14 +36,14 @@ body {
   margin-bottom: 25px;
   overflow: hidden;
 }
-/*Efectps de titulo de nosotros*/
+/*Efectos de titulo de nosotros*/
 .nosotros span {
   color: #ffff;
   display: block;
   font-size: 49px;
   padding: 0px 10px;
   font-weight: bold;
-  margin-left: 25%;
+  margin-left: 23%;
   animation-name: deslizarNosotros;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -115,36 +61,30 @@ body {
   }
 }
 
-.mision {
+/*Fin de efectos de titulo de nosotros*/
+
+.descripcion {
   width: 50%;
   margin: 0 auto;
   
 }
-/*Efectos de mision*/
-/* .mision .mision-titulo h3 {
-  color: #e1edf7;
-  font-size: 100px;
-  text-align: center;
-  animation-name: revelarMision;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-} */
- .mision-cuerpo p {
+
+/*Efecto de descripcion*/
+ .descripcion-cuerpo p {
   font-weight:bold;
   line-height:  1.8;;
   text-align: justify;
   color:#4d0d6e;
   font-size: 25px;
-  animation-name: revelarMision;
-  animation-duration: 1s;
+  animation-name: revelarDescripcion;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
-@keyframes revelarMision {
+@keyframes revelarDescripcion {
   0% {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(10%);
   }
   100% {
     opacity: 1;
@@ -152,98 +92,10 @@ body {
   }
 }
 
-/*fin de mision*/
+/*Fin de efecto de descripcion*/
 
-/*inicio de estrategia*/
-
-#wrapper{
-  max-width: 700px;
-  margin: 0 auto;
-  height: 500px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.box{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: inline-block;
-}
-.box img {
-  width: 186px;
-  height: 400px;
-  -moz-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
-#one {
-  margin-top: 50px;
-  border-radius: 20px;
-  width: 500px;
-  float: left;
-  background: #7fb2e5;
-}
-#one h3, li {
-  color: #ffffff;
-
-}
-#one h3 {
-  font-weight:bold;
-  padding-top: 20px;
-  padding-left: 20px;
-  font-size: 25px;
-}
-.box-lista{
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}
-.box-title h3 {
-  font-weight:bold;
-  font-size: 25px;
-  line-height: 1.8;
-}
-.box-lista li {
-  font-weight:bold;
-  font-size: 25px;
-  line-height: 1.8;
-}
-
-
-#two {
-  float: left;
-}
-/*fin de estrategia*/
-/*inicio de vision*/
-.vision {
-  width: 46%;
-  margin: 0 auto;
-}
-
-.vision-titulo {
-  width: 100%;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.vision-cuerpo {
-  width: 100%;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.efectoVision{
-  animation-name: revelarVision;
-}
-
-.img-contenido{
-  width: 50%;
-  margin: 0 auto;
-}
-.presentacion {
+/* Efecto del grafico */
+.grafico {
   width: 100%;
   text-align: center;
   background-repeat: repeat, no-repeat;
@@ -254,6 +106,7 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease;
 }
+
 @keyframes opacityImage {
   0% {
     opacity: 0;
@@ -262,7 +115,8 @@ body {
     opacity: 1;
   }
 }
-.presentacion img {
+
+.grafico img {
   width: 70%;
   animation-name: deslizarlogo;
   animation-fill-mode: forwards;
@@ -282,15 +136,73 @@ body {
     opacity: 1;
   }
 }
-.vision .vision-cuerpo p {
-  width: 100%;
-  line-height: 1.8;
-  text-align: justify;
-  color: #4d0d6e;
+
+/* Fin del efecto del grafico */
+
+.estrategia{
+  max-width: 700px;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.estrategia-cuerpo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+/*Efecto del estrategia-cuerpo*/
+#one {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 500px;
+  float: left;
+  background: #7fb2e5;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.efectoEstrategia{
+  animation-name: revelarEstrategia;
+}
+
+@keyframes revelarEstrategia {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*Fin del efecto del estrategia-cuerpo*/
+
+.estrategia-titulo{
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.estrategia-titulo h3 {
   font-weight:bold;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight:bold;
+  padding-top: 20px;
+  padding-left: 20px;
   font-size: 25px;
 }
-@keyframes revelarVision {
+/*Efecto del estrategia-titulo*/
+.efectoTitulo{
+  animation-name: revelarTitulo;
+}
+
+@keyframes revelarTitulo {
   0% {
     opacity: 0;
     transform: translateX(-100%);
@@ -300,93 +212,133 @@ body {
     transform: translateX(0px);
   }
 }
+/*Fin del efecto del estrategia-titulo*/
 
-/*fin de vision*/
-
-/* .valores {
-  width: 100%;
-}
-
-.valores-titulo {
-  text-align: center;
-  padding: 20px 0px;
-  margin-bottom: 20px;
-}
-
-.valores-titulo h4 {
-  font-size: 70px;
-  color: #9e299e;
-  font-weight: bold;
-}
-
-.valores-figuras {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.valor {
-  width: 25%;
-}
-.valor:nth-child(1) {
-  background-color: #660066;
-}
-.valor:nth-child(2) {
-  background-color: #4d0d6e;
-}
-.valor:nth-child(3) {
-  background-color: #4521d1;
-}
-.valor:nth-child(4) {
-  background-color: #0066cc;
-}
-.valor .imagen {
-  text-align: center;
-  padding: 50px 0px 10px 0px;
-}
-.valor .imagen img {
-  width: 30%;
-}
-.valor .texto {
-  width: 100%;
-  text-align: center;
-}
-.valor .texto p {
-  width: 70%;
-  margin: auto;
-  padding: 10px 0px 60px 0px;
+.estrategia-lista li {
+  font-weight:bold;
+  font-size: 25px;
   color: #ffffff;
-  font-size: 30px;
-  font-weight: bold;
-} */
+  line-height: 1.8;
+}
 
-/*inicio footer*/
-.footer {
-  background-color: #e8e6e6;
-  width: 100%;
-  display: flex;
-  padding: 60px 0px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+/*Efecto de estrategia-lista*/
+.estrategia-lista{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
-.footer-list {
-  list-style: none;
-  width: 30%;
+
+.efectoLista{
+  animation-name: revelarLista;
 }
-.footer-list li {
-  color: #685748;
+
+@keyframes revelarLista{
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
-.footer-social {
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+/*Fin del efecto de estrategia-lista*/
+
+/*Voltear horizontalmente la imagen*/
+.estrategia-cuerpo img {
+  width: 186px;
+  height: 400px;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
-.footer-social i {
-  font-size: 28px;
-  margin: 10px;
+
+/*Efecto de la  imagen de estrategia*/
+#two {
+  float: left;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
+
+.efectoImagen {
+  animation-name: deslizarImagen;
+}
+
+@keyframes deslizarImagen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Fin del efecto de la  imagen de estrategia*/
+
+.objetivo {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.objetivo-cuerpo p {
+  font-weight:bold;
+  line-height:  1.8;;
+  text-align: justify;
+  color:#4d0d6e;
+  font-size: 24px;
+  animation-name: revelarObjetivo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes revelarObjetivo {
+  0% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn-whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: .7s;
+}
+
+.btn-whatsapp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
 @media (max-width: 1300px){
-  .mision{
+  .descripcion{
+    width: 80%;
+  }
+  .objetivo {
     width: 80%;
   }
   .vision {
@@ -395,112 +347,30 @@ body {
 }
 
 @media (max-width: 1020px) {
-  .mision{
+  .descripcion{
+    width: 80%;
+  }
+  .objetivo {
     width: 80%;
   }
   .vision {
     width: 80%;
-  }
-  .img-contenido  {
-    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
-  .nav {
-    padding: 40px 0px;
-    animation: none;
-  }
-  .nav-logo {
-    flex-basis: 100%;
-    text-align: center;
-    order: 1;
-  }
-  .nav-movil {
-    width: 100%;
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .nav-movil i {
-    font-size: 60px;
-    padding: 20px;
-    z-index: 33;
-    position: fixed;
-    color: #660066;
-    top: 0px;
-  }
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    order: 4;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    top: 0px;
-    height: 100vh;
-    z-index: 32;
-    background-color: white;
-    transform: translateX(100%);
-    transition: transform 2s;
-  }
-  .abrir {
-    transform: translateX(0%);
-  }
-  .nav-list li {
-    border-radius: 0px;
-    padding: 10px 10px;
-    margin-left: 10px;
-    text-align: center;
-    box-shadow: none;
-    transition: background-color 1s;
-  }
-  .nav-list li:hover {
-    background-color: #e1edf7;
-  }
-  .nav-list li a {
-    color: #660066;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  .nav-social {
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    order: 2;
-  }
-  .nav-social i {
-    padding: 10px;
-    font-size: 40px;
-  }
-  .mision {
+  .descripcion {
     width: 100%;
     padding: 40px 0px;
   }
-  .mision-titulo {
+  .objetivo {
+    width: 80%;
+  }
+  .grafico img{
     width: 100%;
-  }
-  .vision {
-    width: 100%;
-    padding: 40px 0px;
-  }
-  .vision-titulo {
-    width: 100%;
-  }
-  .vision .vision-titulo h3 {
-    width: 100%;
-  }
-  .vision .vision-cuerpo p {
-    width: 50%;
-    margin: auto;
-  }
-  .valor {
-    width: 50%;
   }
 }
+
 @media (max-width: 425px) {
   .nosotros {
     width: 100%;
@@ -511,32 +381,14 @@ body {
     padding: 0px;
     margin-left: 0px;
   }
-  .vision .vision-cuerpo p {
+  .objetivo {
     width: 80%;
-    margin: auto;
   }
-  .valor {
+  .grafico img{
     width: 100%;
   }
-  .footer-list {
-    width: 100%;
-    order: 2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
- 
-  .footer-list li {
+  .descripcion-cuerpo p {
     font-size: 18px;
-    width: 100%;
-    text-align: center;
-  }
-  .footer-social {
-    width: 100%;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
+
