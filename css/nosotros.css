@@ -66,6 +66,7 @@ body {
 .descripcion {
   width: 50%;
   margin: 0 auto;
+
   
 }
 
@@ -77,14 +78,14 @@ body {
   color:#4d0d6e;
   font-size: 25px;
   animation-name: revelarDescripcion;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 @keyframes revelarDescripcion {
   0% {
     opacity: 0;
-    transform: translateX(10%);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
@@ -158,8 +159,8 @@ body {
   width: 500px;
   float: left;
   background: #7fb2e5;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -171,7 +172,7 @@ body {
 @keyframes revelarEstrategia {
   0% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
   100% {
     opacity: 1;
@@ -182,9 +183,9 @@ body {
 
 .estrategia-titulo{
   animation-duration: 1.5s;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
-  opacity: 0;
+  opacity: 1;
 }
 
 .estrategia-titulo h3 {
@@ -204,8 +205,8 @@ body {
 
 @keyframes revelarTitulo {
   0% {
-    opacity: 0;
-    transform: translateX(-100%);
+    opacity: 1;
+    transform: translateX(120%);
   }
   100% {
     opacity: 1;
@@ -226,10 +227,10 @@ body {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
-  opacity: 0;
+  opacity: 1;
 }
 
 .efectoLista{
@@ -238,8 +239,8 @@ body {
 
 @keyframes revelarLista{
   0% {
-    opacity: 0;
-    transform: translateX(-100%);
+    opacity: 1;
+    transform: translateX(120%);
   }
   100% {
     opacity: 1;
@@ -262,7 +263,7 @@ body {
 /*Efecto de la  imagen de estrategia*/
 #two {
   float: left;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -297,13 +298,13 @@ body {
   font-size: 24px;
   animation-name: revelarObjetivo;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 @keyframes revelarObjetivo {
   0% {
     opacity: 0;
-    transform: translateX(10%);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
