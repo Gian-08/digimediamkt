@@ -1,28 +1,51 @@
+
+
 <?php
 $nombre = $_POST['nombre'];
-$mail = $_POST['email'];
-$celular = $_POST['celular'];
-$empresa = $_POST['empresa'];
-$ubicacion = $_POST['ubicacion'];
+$apellidos = $_POST['apellidos'];
+$telefonos = $_POST['telefonos'];
+$email = $_POST['email'];
+$mensaje = $_POST['mensaje'];
 
-$header = 'From: ' . $mail . " \r\n";
+
+$remitente='NOMBREREMITENTE';
+
+$header = 'From: ' . $remitente . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+$header .= "Content-Type: text/html";
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Su empresa es: " . $empresa . " \r\n";
-$mensaje .= "Su ubicación es: " . $ubicacion . " \r\n";
-$mensaje .= "Su celular es: " . $_POST['celular'] . " \r\n";
+$mensaje = "<b>NOMBRE:</b>" . $nombre." <br>";
+$mensaje .= "<b>APELLIDOS:</b>" . $apellidos." <br>";
+$mensaje .= "<b>TELEFONO</b>: " . $telefonos . " <br>";
+$mensaje .= "<b>EMAIL</b>: " . $email . " <br>";
+$mensaje .= "<b>MENSAJE</b>: " . $_POST['mensaje'] . " <br>";
+$mensaje .= "<b>Enviado el </b>" . date('d/m/Y', time());
 
+$para = "email@yahoo.com";
+$asunto = 'Contacto desde la Web';
 
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+mail($para, $asunto, utf8_decode($mensaje), $header)
 
-
-$para = "christianstlv21@gmail.com";
-
-mail($para, $asunto, $mensaje, $header);
-
-header('Location:servicios.html');
 ?>
+<!-- <script type="text/javascript">
+	window.onload = function(){
+		var conf = confirm("Su mensaje fue enviado con exito");
+		if(conf)
+		{
+			document.location="index.html";
+		}
+		else
+		{
+			document.location="contacto.html";
+		}
+	}
+</script> -->
+
+
+
+
+
+
+
+
